@@ -1,0 +1,190 @@
+
+.glow {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.7)) 
+            drop-shadow(0 0 1px #1b68b1);
+    transition: filter 0.3s ease;
+}
+
+.glow:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1)) 
+    drop-shadow(0 0 3px rgba(255, 255, 255, 1)); 
+}
+
+/* Pozovite Nas*/ 
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(6 79 141);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 1vw;
+    height: 3vw;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+
+  
+  /* Pogledajte Galeriju*/ 
+.cssbuttons-io-button {
+  background: rgb(6 79 141);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 1vw;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 3px solid #ffffff4d;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #064f8d;
+  overflow: hidden;
+  position: relative;
+  height: 3vw;
+  padding-right: 3.3em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #064f8d;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #064f8d;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateY(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.nestaniC{
+  display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .nestaniC{
+display: none;
+
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+
+  .ww{
+width: 30vw;
+
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  .ff{
+display: flex;
+justify-content: center;
+padding-left: 20px;
+padding-right: 20px;
+
+  }
+}
+
+p{
+
+  font-size: clamp(6px, 1.5vw, 22px);
+  
+}
+
+@media only screen and (max-width: 800px) {
+
+  p{
+font-size: large;
+
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .button{
+    font-size: 2vw;
+    height: 5vw;
+  }
+  .cssbuttons-io-button{
+    font-size: 2vw;
+    height: 5vw;
+  }
+  
+}
+@media only screen and (max-width: 500px) {
+
+  .button, .cssbuttons-io-button{
+    font-size: 15px;
+    height: 40px;
+  }
+  
+}

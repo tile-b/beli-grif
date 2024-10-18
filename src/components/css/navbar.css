@@ -1,0 +1,146 @@
+.headerTopBar {
+    background-color:  #2c3a47;
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    padding: 5px 15px;
+}
+
+.headerBottomBar {
+    background-color: rgb(172, 178, 181);
+    position: static;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    transition: height 0.3s ease;
+    transition: all 0.5s ease-in-out; /* General transition */
+}
+
+.headerBottomBar .ee {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.headerBottomBar .beliGrif {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(10px); /* Optional: Initial position */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+}
+
+.headerBottomBar.small .ee {
+    opacity: 0; /* Fade out logo */
+    transform: translateY(-10px); /* Optional: Move it slightly up */
+    height: 0; /* Collapse height */
+    overflow: hidden; /* Prevent space taken by hidden element */
+}
+
+.headerBottomBar.small .beliGrif {
+    opacity: 1; /* Fade in text */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Add the hidden class to completely remove the logo from layout */
+.hidden {
+    display: none; /* Prevent the logo from taking up space */
+}
+
+.visible {
+    opacity: 1; /* Show the text */
+}
+.beliGrif{
+    font-weight: bold;
+    color: #2c3a47;
+    text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+     display: flex;
+     align-items: center;
+     font-size: x-large;
+
+}
+
+  
+@media only screen and (max-width: 1150px) {
+
+    .headerBottomBar{
+position: sticky;
+z-index: 799;
+top: 53px;
+    }
+
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 50px;
+}
+
+.spanTop{
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(172, 172, 172);
+
+}
+.spanTop:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.ico{
+    padding-right: 10px;
+    width: 20px;
+}
+.hovWhite {
+    color:  #062a45;
+    font-size: 20px;
+}
+
+.hovWhite:hover{
+    color: #ffff;
+    cursor: pointer;
+}
+@media only screen and (min-width: 1150px) {
+
+    .hovWhite{
+        height: 9vw;
+        display: flex;
+        align-items: flex-end;
+
+    }
+
+}
+.ajp{
+  
+        text-decoration: none;
+        color: inherit;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font: inherit;
+        cursor: pointer;
+
+}
+.ee{
+    padding-left: 8vw;
+}
+
+@media only screen and (max-width: 980px) {
+
+    .nestani{
+display: none;
+
+    }
+    .spanTop{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ee{
+        padding-left: 0;
+    }
+  }
